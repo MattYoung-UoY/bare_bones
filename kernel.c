@@ -13,7 +13,7 @@ const int VGA_ROWS = 25;
 
 int term_col = 0;
 int term_row = 0;
-uint8_t term_colour = 0x0F;
+uint8_t term_colour = 0x1F;
 
 void term_init(){
 	for(int col = 0; col < VGA_COLS; col++){
@@ -63,4 +63,5 @@ void kernel_main(){
 
 	term_print("Hello World!\n");
 	term_print("Welcome to the kernel.\n");
+	term_print("Printing more text to test the capabilities of this new kernel that I have written as part of the OSDev Wiki Bare Bones tutorial.\n");
 }
